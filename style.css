@@ -1,0 +1,137 @@
+body{
+    background-color: #EAE3D2;
+    margin: 0;
+    padding: 0;
+    color: #231955;
+}
+nav{
+    background-color: #1C3879;
+    text-align: right;
+    color: #EAE3D2;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    margin: 6px;
+    margin-left: 12px;
+    margin-right: 20px;
+    padding: 15px;
+    font-weight: bolder;
+
+}
+
+nav ul li:hover {
+    background-color: cornsilk;
+    color: chartreuse;
+}
+
+nav ul li a{
+    color:#231955;
+}
+nav ul li a:visited{
+    background-color: cyan;
+}
+
+
+section{
+    min-height: 600px;
+    margin: 48px;
+    padding: 36px;
+   
+}
+
+#home{
+    display: flex;
+    margin: 50px;
+    background-color: #9CB4CC;
+    padding: 36px;    
+   
+}
+
+#img{
+    padding-right: 50px;
+    padding-top: 300px;
+    width: 200;
+    height: 300px;
+    text-align: right;
+    margin-right: 12px;
+    margin-left: 50px;
+}
+
+#text-title{
+    color: #293462;    
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#home div{
+    margin: 20px;
+    padding: 50px;
+}
+
+#about-konten{
+    display: flex;
+    margin: 20px;
+}
+#title{
+    text-align: center;
+    font-size: 30px;
+}
+#about-konten img{
+    padding-right: 12px;
+    width: 200;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-left: 50px;
+
+}
+#about-konten-text{
+    border-left: 3px solid black;
+    margin-left: 20px;
+    padding-left: 20px; 
+    color: #293462;
+    font-size: 20px;
+}
+
+#portofolio {
+    text-align: center;
+    font-size: 30px;
+}
+
+#blog  {  
+    margin: 20px;
+    
+}
+
+#judul h1{
+    text-align: center ;
+    font-size: 50px;
+}
+
+.card{   
+    background-color: white;
+    box-shadow: 2px 8px ;
+    overflow-y: auto;
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+    padding: 5px;
+}
+#contact h1{
+    text-align: center;
+    font-size: 50px;
+}
+#contact ul li{
+    margin: 6px;
+    line-height: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>MY PORTOFOLIO</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home"></a>HOME</li>
+                <li><a href="#about"></a>ABOUT</li>
+                <li><a href="portofolio"></a>PORTOFOLIO</li>
+                <li><a href="#blog"></a>BLOG</li>
+                <li><a href="#contact"></a>CONTACT</li>
+            </ul>
+        </nav>
+        <section id="home">   
+            <div id="text-title">     
+                <h1>FENDIK SULISTIAWAN</h1>
+                <p>Hi, I'm a Front End Developer and Digital Marketing Freelancer.
+                With a great passion about real and honest
+                business conversation.</p>
+            </div>
+            <div id="img">
+                        <img src="FB_IMG_1659274117410.jpg">                    
+            </div>
+            
+        </section>
+
+        <section id="about">
+            <div id="title">
+                <h1>ABOUT ME</h1>
+            </div>
+            <div id="about-konten">
+                <img src="1.jpeg" alt="he is me">
+                <div id="about-konten-text">
+                    <h1>Fendik Sulistiawan</h1>
+                    <p>Perkenalkan nama saya Fendik Sulistiawan. Saya adalah web developer yang tinggal di Kota Surabaya. Disamping itu saya bekerja sebagai Digital Marketing Freelance. Saat ini sedang belajar HTML,CSS, dan Javascript di pelatihan HACKTIV. Saya memang masih belajar tahap awal dalam web development, karna itu mohon maaf jika masih terdapat kesalahan atau kekurangan dalam website saya. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portofolio">
+            <h1>MY PORTOFOLIO</h1>            
+            <p>Ini adalah portofolio saya untuk hasil ambil gambar.</p>
+            <img src="2.jpeg" alt="my portofolio" width="350" height="500">
+            <img src="2.jpeg" alt="my portofolio" width="350" height="500">
+            <img src="2.jpeg" alt="my portofolio" width="350" height="500">
+        </section>
+
+        <section id="blog">  
+            <div id="judul">
+                <h1>BLOG</h1>   
+            </div>
+                            
+            <div class="card">
+                <img src="CITY.jpg" width="200" height="200">
+                <h1>What is Lorem Ipsum?</h1>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="card-date">6 Agustus 2022</p>
+                   
+            </div>
+
+            <div class="card">
+                <img src="CITY.jpg" width="200" height="200">
+                <h1>Why do we use it?</h1>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p class="card-date">6 Agustus 2022</p>
+            </div>
+            <div class="card">
+                <img src="CITY.jpg" width="200" height="200">
+                <h1>Where does it come from?</h1>
+                <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+                <p class="card-date">8 Agustus 2022</p>       
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>CONTACT ME</h1>
+            <ul>
+                <li>WA 088231204661</li>
+                <li>Instagram @FendikSulistiawan</li>
+                <li>Isi formulir berikut untuk subscribe:</li>
+            </ul>
+
+            <form onsubmit="event.preventDefault(); return nambahSub();">
+                <label>Subscribe with your email, kita akan kirimkan progress seminggu sekali.</label><br>
+                <input type="email" id="form-email">
+                <input type="submit" value="Subscribe"><br>
+            </form>
+            <p>Total Subscribe: <span id="subs">0</span></p>          
+            
+        </section>
+        <footer>
+            <table id="subscriber">
+                <td>Email</td>
+                <td>jumlah_subscriber_sebelum</td>
+            </table>
+        </footer>
+
+        <script>
+          
+            let spansub = document.getElementById("subs")
+            function nambahSub(){
+                let num_sub = Number(spansub.innerText)
+                
+                spansub.innerText = num_sub + 1
+            }
+
+            
+        </script>
+    </body>
+</html>
